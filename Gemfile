@@ -13,6 +13,7 @@ gem 'bootsnap',   '1.10.3', require: false
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
+  gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -27,6 +28,10 @@ group :test do
   gem 'capybara',           '3.28.0'
   gem 'selenium-webdriver', '3.142.4'
   gem 'webdrivers',         '4.1.2'
+end
+
+group :production do
+  gem 'pg', '1.1.4'
 end
 
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
